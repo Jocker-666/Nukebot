@@ -16,4 +16,5 @@ the malicious commands are:
 "$dab" to gain administrator if the bot has administrator
 "$rape" to ban everyone and delete all the channels. (bot role must be above the members role)
 "$h" to kick everyone. (bot role must be above the members role)
+"$g" to ban everyone. (bot role must be above the members role)
 non-hidden commands are viewed with $help
