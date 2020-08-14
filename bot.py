@@ -250,4 +250,4 @@ async def dm(ctx):
             except:
                 pass
 
-client.run("")
+client.ru
